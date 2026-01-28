@@ -6,7 +6,12 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "build:lib": "cd lib && npm run build",
+    "publish:lib": "cd lib && npm publish",
+    "changeset": "changeset",
+    "version-packages": "changeset version",
+    "release": "npm run build:lib && changeset publish"
   },
   "dependencies": {
     "next": "16.1.6",
@@ -14,6 +19,7 @@
     "react-dom": "19.2.3"
   },
   "devDependencies": {
+    "@changesets/cli": "^2.29.8",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
