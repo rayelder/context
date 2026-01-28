@@ -1,11 +1,12 @@
 {
   "name": "@rayelder/context",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "description": "A design system component library",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "files": [
-    "dist"
+    "dist/**/*",
+    "dist/**/*.css"
   ],
   "scripts": {
     "build": "tsc",

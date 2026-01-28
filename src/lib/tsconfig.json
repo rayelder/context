@@ -1,13 +1,16 @@
 {
-  "extends": "../tsconfig.json",
+  "extends": "../../tsconfig.json",
   "compilerOptions": {
     "outDir": "./dist",
     "declaration": true,
     "declarationMap": true,
-    "jsx": "react-jsx"
+    "jsx": "react-jsx",
+    "noEmit": false,
+    "typeRoots": ["../../node_modules/@types", "../types"]
   },
   "include": [
-    "./**/*"
+    "./**/*",
+    "../types/**/*"
   ],
   "exclude": [
     "dist",

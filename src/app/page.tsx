@@ -8,7 +8,7 @@ export default function Home() {
     <div className={styles.page}>
       <main className={styles.main}>
           <Button
-            label="Click Me"
+            label="Call-to-action"
             onClick={handleClick}
           />
       </main>
@@ -17,5 +17,5 @@ export default function Home() {
 }
 
 function handleClick() {
-  alert("Button clicked!");
+  alert("Call-to-action clicked!");
 }

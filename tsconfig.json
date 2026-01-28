@@ -20,7 +20,8 @@
     ],
     "paths": {
       "@/*": ["./src/*"]
-    }
+    },
+    "typeRoots": ["./node_modules/@types", "./src/types"]
   },
   "include": [
     "next-env.d.ts",
@@ -28,7 +29,6 @@
     "**/*.tsx",
     ".next/types/**/*.ts",
     ".next/dev/types/**/*.ts",
-    "**/*.mts"
-, "src/lib/tsconfig.json"  ],
-  "exclude": ["node_modules"]
+    "**/*.mts"  ],
+  "exclude": ["node_modules", "src/lib/dist"]
 }
