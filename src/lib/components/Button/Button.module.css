@@ -1,24 +1,41 @@
 .base {
-	background-color: #0070f3;
-	color: white;
-	border: none;
-	padding: 10px 20px;
-	border-radius: 5px;
-	cursor: pointer;
-	font-size: 16px;
-	transition: background-color 0.3s ease;
+  height: 3.5rem;
+  padding: 1rem 2rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  color: #fff;
+  border: none;
+  font-size: 1.1875rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
 }
 
-.base:hover {
-	background-color: #005bb5;
+.primary {
+  composes: base;
+  background-color: #767676;
+}
+
+.primary:hover {
+  background-color: #000;
+}
+
+.secondary {
+  composes: base;
+  background-color: transparent;
+  border: 2px solid #767676;
+  color: #767676;
+}
+
+.secondary:hover {
+  border-color: #000;
+  color: #000;
 }
 
 .pill {
-	composes: base;
-	border-radius: 999px;
+  border-radius: 999px;
 }
 
 .rounded {
-	composes: base;
-	border-radius: 0.5rem;
+  border-radius: 0.5rem;
 }

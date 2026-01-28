@@ -9,11 +9,19 @@ export default function Home() {
       <main className={styles.main}>
           <Button
             label="Call-to-action"
-            isPill={true}
+            isPill
           />
           <Button
             label="Call-to-action"
-            isPill={false}
+          />
+          <Button
+            label="Call-to-action"
+            variant="secondary"
+            isPill
+          />
+          <Button
+            label="Call-to-action"
+            variant="secondary"
           />
       </main>
     </div>
