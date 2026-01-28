@@ -1,15 +1,14 @@
 {
   "name": "@rayelder/context",
-  "version": "0.0.3",
+  "version": "0.0.6",
   "description": "A design system component library",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "files": [
-    "dist/**/*",
-    "dist/**/*.css"
+    "dist/**/*"
   ],
   "scripts": {
-    "build": "tsc",
+    "build": "tsc && copyfiles \"components/**/*.module.css\" dist/ --up 0",
     "prepublishOnly": "npm run build"
   },
   "peerDependencies": {
@@ -17,7 +16,8 @@
     "react-dom": ">=18.0.0"
   },
   "devDependencies": {
-    "typescript": "^5.0.0",
-    "@types/react": "^18.0.0"
+    "@types/react": "^18.0.0",
+    "copyfiles": "^2.4.1",
+    "typescript": "^5.0.0"
   }
 }
