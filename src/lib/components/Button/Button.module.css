@@ -8,3 +8,17 @@
 	font-size: 16px;
 	transition: background-color 0.3s ease;
 }
+
+.base:hover {
+	background-color: #005bb5;
+}
+
+.pill {
+	composes: base;
+	border-radius: 999px;
+}
+
+.rounded {
+	composes: base;
+	border-radius: 0.5rem;
+}
