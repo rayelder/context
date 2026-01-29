@@ -1,0 +1,16 @@
+.base {
+  color: #767676;
+  leading-trim: both;
+  text-edge: cap;
+  font-family: Inter;
+  font-size: 1.1875rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.base:hover {
+  color: #000;
+}
