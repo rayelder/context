@@ -1,4 +1,6 @@
 .base {
+  display: inline-block;
+  flex-shrink: 0;
   height: 3.5rem;
   padding: 1rem 2rem;
   cursor: pointer;

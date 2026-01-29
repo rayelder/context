@@ -4,7 +4,7 @@
     "label": "React",
     "interactiveSetupFigmaFileUrl": "https://www.figma.com/design/FNVYXYuplFl2mNZi9YzuQ9",
     "importPaths": {
-      "src/components/*": "@rayelder/context"
+      "src/lib/components/*": "@rayelder/context"
     }
   }
 }
